@@ -1,4 +1,4 @@
-# 🧠 Dual-Band AI Supply Chain Lead Time Predictor
+# Dual-Band AI Supply Chain Lead Time Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-GradientBoosting-orange.svg)
@@ -17,7 +17,7 @@ I engineered an automated machine learning pipeline that discards human schedule
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### 1. High-Cardinality Volatility Encoding
 The dataset contains 351 unique vendors and 125 unique cities. Standard One-Hot Encoding would bloat the dimensionality to unmanageable levels and fail to capture variance. 
@@ -39,7 +39,7 @@ By testing the Quantile Model at `alpha=0.85` vs `alpha=0.95`, the architecture 
 * For highly unpredictable vendors (e.g., *Quantum Components*), moving the safety dial to 95% triggers a massive inventory buffer to protect the assembly line. 
 * For slow-but-consistent vendors (e.g., *Strata Global*), the AI recognizes that adding safety buffer is a waste of warehouse space, keeping inventory holding times exceptionally lean.
 
-## 🚀 Quick Start
+## Quick Start
 To run the automated batch inference on a raw spreadsheet of unscheduled Purchase Orders:
 
 ```python
